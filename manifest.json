@@ -1,14 +1,15 @@
 {
   "manifest_version": 3,
   "name": "FontSwap Lab",
-  "version": "0.1.0",
-  "description": "Detect fonts on any webpage and temporarily swap them for previewing.",
+  "version": "0.2.0",
+  "description": "Detect, inspect, and temporarily swap webpage fonts with system or Google Fonts.",
   "action": {
     "default_popup": "popup.html",
     "default_title": "FontSwap Lab"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "content_scripts": [
     {

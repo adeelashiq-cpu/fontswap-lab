@@ -11,24 +11,39 @@
     <header class="topbar">
       <div>
         <p class="eyebrow">FONT INSPECTOR</p>
-        <h1>FontSwap Lab</h1>
+        <h1>FontSwap Lab <span>v2</span></h1>
       </div>
       <button id="rescanBtn" class="icon-btn" type="button" title="Rescan page">↻</button>
     </header>
+
+    <section class="actions">
+      <button id="inspectBtn" class="primary-btn" type="button">Inspect on page</button>
+      <button id="resetBtn" class="secondary-btn" type="button">Reset all</button>
+    </section>
+
+    <label class="remember-row">
+      <input id="rememberToggle" type="checkbox" />
+      <span>
+        <strong>Remember on this site</strong>
+        <small>Reapply saved swaps when this domain loads again.</small>
+      </span>
+    </label>
 
     <section class="summary">
       <div>
         <span id="fontCount" class="count">0</span>
         <span class="label">fonts detected</span>
       </div>
-      <button id="resetBtn" class="secondary-btn" type="button">Reset all</button>
+      <div id="swapCount" class="pill">0 active swaps</div>
     </section>
 
     <div id="status" class="status">Scanning current page…</div>
+
+    <datalist id="fontOptions"></datalist>
     <section id="fontList" class="font-list" aria-live="polite"></section>
 
     <footer>
-      Changes are temporary and disappear after a normal page refresh.
+      Tip: “Inspect on page” lets you hover and click text directly on the website.
     </footer>
   </main>
 
