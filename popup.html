@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FontSwap Lab</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">FONT INSPECTOR</p>
+        <h1>FontSwap Lab</h1>
+      </div>
+      <button id="rescanBtn" class="icon-btn" type="button" title="Rescan page">↻</button>
+    </header>
+
+    <section class="summary">
+      <div>
+        <span id="fontCount" class="count">0</span>
+        <span class="label">fonts detected</span>
+      </div>
+      <button id="resetBtn" class="secondary-btn" type="button">Reset all</button>
+    </section>
+
+    <div id="status" class="status">Scanning current page…</div>
+    <section id="fontList" class="font-list" aria-live="polite"></section>
+
+    <footer>
+      Changes are temporary and disappear after a normal page refresh.
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
